@@ -1,0 +1,98 @@
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav opened mode="side" style="width: 300px;">
+        <div ><h1 id="logo">RK</h1></div>
+        <mat-divider></mat-divider>
+        <h3>Main Menu</h3>
+        <mat-accordion class="example-headers-align">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Dashboard
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list><a routerLink="admin-dash"> Admin Dashboard</a></mat-list>
+                <mat-list><a routerLink="teacher-dash">Teacher Dashboard</a></mat-list>
+                <mat-list><a routerLink="student-dash">Student Dashboard</a></mat-list>
+                                
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                                    Students
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-list><a routerLink="studentlist">Student List</a></mat-list>
+                <mat-list><a routerLink="studentview">Student View</a></mat-list>
+                <mat-list><a routerLink="studentadd">Student Add</a></mat-list>
+                <mat-list><a routerLink="studentedit">Student Edit</a></mat-list>
+                
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Teachers
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-list><a routerLink="teacherlist"> Teacher List</a> </mat-list>
+                <mat-list><a routerLink="teacherview"> Teacher View</a> </mat-list>
+                <mat-list><a routerLink="teacheradd"> Teacher Add</a></mat-list>
+                <mat-list><a routerLink="teacheredit">Teacher Edit</a></mat-list>
+
+
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Departments
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-list><a routerLink="departmentlist">Department List</a> </mat-list>
+                <mat-list><a routerLink="departmentadd">Department Add</a> </mat-list>
+                <mat-list><a routerLink="departmentedit">Department Edit</a> </mat-list>
+                
+                
+            </mat-expansion-panel>
+            
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Subjects
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-list><a routerLink="subjectlist">Subject List</a> </mat-list>
+                <mat-list><a routerLink="subjectadd">Subject Add</a> </mat-list>
+                <mat-list><a routerLink="subjectedit">Subject Edit</a> </mat-list>
+                
+                
+
+
+            </mat-expansion-panel>
+
+        </mat-accordion>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height:100vh;">
+            <mat-toolbar>
+                <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+                
+                    <input type="search" name="" id="" placeholder="Search here">
+            <span class="spacer"></span>
+            <button mat-icon-button> <mat-icon>notifications</mat-icon> </button>
+            </mat-toolbar>
+            <router-outlet></router-outlet>
+            <app-footer></app-footer>
+        </div>
+        
+        
+        
+    </mat-sidenav-content>
+</mat-sidenav-container>

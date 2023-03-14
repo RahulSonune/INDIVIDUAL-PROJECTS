@@ -1,0 +1,102 @@
+{
+  "subject": [
+    {
+      "subjectID": "101",
+      "subjectName": "hindi",
+      "class": "9",
+      "id": 1
+    },
+    {
+      "subjectID": "102",
+      "subjectName": "English",
+      "class": "8",
+      "id": 2
+    },
+    {
+      "subjectID": "103",
+      "subjectName": "Sanskrit",
+      "class": "6",
+      "id": 3
+    },
+    {
+      "subjectID": "106",
+      "subjectName": "Physics",
+      "class": "11",
+      "id": 4
+    }
+  ],
+  "department": [
+    {
+      "departmentID": "101",
+      "departmentName": "Angular",
+      "startDate": "2023-03-06",
+      "noStudent": "60",
+      "hod": "Aman",
+      "id": 1
+    },
+    {
+      "departmentID": "102",
+      "departmentName": "Hindi",
+      "startDate": "2023-03-06",
+      "noStudent": "80",
+      "hod": "Rahul verma",
+      "id": 2
+    },
+    {
+      "departmentID": "103",
+      "departmentName": "Economics",
+      "startDate": "2023-03-06",
+      "noStudent": "30",
+      "hod": "SK",
+      "id": 3
+    }
+  ],
+  "teacher": [
+    {
+      "teacherID": "102",
+      "name": "Rahul verma",
+      "gender": "Male",
+      "dob": "1999-05-03",
+      "mobile": "9898989898",
+      "joiningDate": "2023-01-11",
+      "qualification": "BEd",
+      "exp": "2",
+      "username": "imrahul",
+      "email": "rahul271096@gmail.com",
+      "pwd": "123454",
+      "rpwd": "12345",
+      "address": "1C",
+      "city": "Ramgarh",
+      "state": "Jharkhand",
+      "zcode": "829103",
+      "country": "India",
+      "id": 2
+    }
+  ],
+  "student": [
+    {
+      "firstName": "Rahul",
+      "lastName": "verma",
+      "stuID": "111",
+      "gender": "Male",
+      "dob": "1999-05-03",
+      "class": "12",
+      "religion": "Hindu",
+      "joiningDate": "2021-01-01",
+      "mobile": "9876789876",
+      "admissionNo": "3228",
+      "section": "A",
+      "fatherName": "Jitendra Verma",
+      "fatherOccupation": "ccl",
+      "fatherMobile": "9887776678",
+      "fatherEmail": "jit@gmail",
+      "motherName": null,
+      "motherOccupation": "House Maker",
+      "motherMobile": "788778787878",
+      "motherEmail": "chandni@gmail.com",
+      "presentAdd": "CCL Colony",
+      "permanentAdd": "CCL Colony",
+      "id": 1
+    }
+  ]
+}
