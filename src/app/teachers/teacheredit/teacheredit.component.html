@@ -1,0 +1,160 @@
+<div class="container-fluid">
+    <h1>Edit Teachers</h1>
+<form [formGroup]="teacherEdit">
+    <div class="title">
+        <h2 class="field-title"><span> Basic Details </span> </h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Teacher ID</label>
+                <input type="text" name="teacherID" formControlName="teacherID" id="" class="form-control">
+            </div>
+        </div>
+        <div class="col">
+            
+            <div class="form-group">
+                <label for="" class="form-label">Name</label>
+                <input type="text" name="name" formControlName="name"  id="" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Gender</label>
+                <select class="form-select" name="gender" formControlName="gender" >
+                    <OPTion value="">select</OPTion>
+                    <OPTion value="Male">Male</OPTion>
+                    <OPTion value="Female">Female</OPTion>
+                    <OPTion value="Others">Others</OPTion>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Date of birth</label>
+                <input type="date" name="dob" formControlName="dob" id="" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Mobile</label>
+                <input type="text" name="mobile" formControlName="mobile" id="" class="form-control">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Joining Date</label>
+                <input type="date" name="joiningDate" formControlName="joiningDate" id="" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Qualification</label>
+                <input type="text" name="qualification" formControlName="qualification" id="" class="form-control">
+            </div>
+        </div>
+        <div class="col">
+
+            <div class="form-group">
+                <label for="" class="form-label">Experience</label>
+                <input type="text" name="exp" formControlName="exp" id="" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h2 class="field-title"><span>Login Details </span> </h2>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Username</label>
+                <input type="text" name="username" formControlName="username" id="" class="form-control">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Email ID</label>
+                <input type="email" name="email" formControlName="email" id="" class="form-control">
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" name="pwd" formControlName="pwd" id="" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">Repeat Password</label>
+                    <input type="password" name="rpwd" formControlName="rpwd" id="" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="title">
+            <h2 class="field-title"><span>Address</span> </h2>
+        </div>
+        <div class="row">
+            <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Address</label>
+                <input type="text" name="address" formControlName="address" id="" class="form-control">
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">City</label>
+                    <input type="text" name="city" formControlName="city" id="" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">State</label>
+                    <input type="text" name="state" formControlName="state" id="" class="form-control">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">Zip Code </label>
+                    <input type="text" name="zcode" formControlName="zcode" id="" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">Country</label>
+                    <input type="text" name="country" formControlName="country" id="" class="form-control">
+                </div>
+            </div>
+
+        </div>
+
+
+
+    
+    
+    <div class="row">
+        <button class="btn btn-warning" (click)="put()">Update</button>
+    </div>
+</form>
+
+</div>
+

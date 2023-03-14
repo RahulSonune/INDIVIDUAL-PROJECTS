@@ -1,0 +1,182 @@
+<div class="container-fluid">
+    <h1>Edit Students</h1>
+<form [formGroup]="studentEdit">
+    <div class="title">
+        <h2 class="field-title"><span>Student Information</span> </h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">First Name</label>
+                <input type="text" name="firstName" formControlName="firstName" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Last Name</label>
+                <input type="text" name="lastName" formControlName="lastName" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Student ID</label>
+                <input type="text" name="stuID" formControlName="stuID" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Gender</label>
+                <select class="form-select" name="gender" formControlName="gender"> 
+                    <OPTion value="">select</OPTion>
+                    <OPTion value="Male">Male</OPTion>
+                    <OPTion value="Female">Female</OPTion>
+                    <OPTion value="Others">Others</OPTion>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Date of Birth</label>
+                <input type="date" name="dob" formControlName="dob" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Class</label>
+                <input type="text" name="class" formControlName="class" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Religion</label>
+                <input type="text" name="religion" formControlName="religion" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Joining Date</label>
+                <input type="date" name="joiningDate" formControlName="joiningDate" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Mobile Number</label>
+                <input type="text" name="mobile" formControlName="mobile" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Admission Number</label>
+                <input type="text" name="admissionNo" formControlName="admissionNo" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Section</label>
+                <input type="text" name="section" formControlName="section" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Student Image</label>
+                <input type="file" name="img" formControlName="img" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <h2 class="field-title"><span>Parent Information </span> </h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Father's Name</label>
+                <input type="text" name="fatherName" formControlName="fatherName" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Father's Occupation</label>
+                <input type="text" name="fatherOccupation" formControlName="fatherOccupation" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Father's Mobile</label>
+                <input type="text" name="fatherMobile" formControlName="fatherMobile" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Father's Email</label>
+                <input type="text" name="fatherEmail" formControlName="fatherEmail" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Mother's Name</label>
+                <input type="text" name="motherName" formControlName="motherName" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Mother's Occupation</label>
+                <input type="text" name="motherOccupation" formControlName="motherOccupation" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Mother's Mobile</label>
+                <input type="text" name="motherMobile" formControlName="motherMobile" class="form-control" id="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" class="form-label">Mother's Email</label>
+                <input type="text" name="motherEmail" formControlName="motherEmail" class="form-control" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="" >Present Address</label>
+                <textarea name="presentAdd" formControlName="presentAdd" id="" class="form-control" cols="30" rows="4"></textarea>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="" >Permanent Address</label>
+                <textarea name="permanentAdd" formControlName="permanentAdd" id="" class="form-control" cols="30" rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-warning" (click)="edit()" >Update</button>
+
+
+</form>
+</div>

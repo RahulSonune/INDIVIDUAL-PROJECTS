@@ -1,0 +1,60 @@
+
+<div class="container-fluid">
+    
+        <h1>Add Department</h1>
+
+    
+   
+    <form [formGroup]="departmentAdd">
+        <div class="title">
+            <h2 class="field-title"><span>Department Details</span> </h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">Department ID</label>
+                    <input type="text" name="departmentID" id="" class="form-control" formControlName="departmentID">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">Head of Department</label>
+                    <input type="text" name="hod" formControlName="hod" id="" class="form-control">
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col">
+    
+                <div class="form-group">
+                    <label for="" class="form-label">No of Students</label>
+                    <input type="text" name="noStudent" formControlName="noStudent" id="" class="form-control">
+                </div>
+            </div>
+    
+    
+            
+    
+            <div class="col">
+                <div class="form-group">
+                    <label for="" class="form-label">Department Name</label>
+                    <input type="text" name="departmentName" formControlName="departmentName" id="" class="form-control">
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                <div class="form-group">
+                    <label for="" class="form-label">Department Start Date</label>
+                    <input type="date" name="startDate" formControlName="startDate" class="form-control">
+                </div>
+                
+            </div>
+    
+    
+        </div>
+        <div class="row"></div>
+        <button class="btn btn-warning" (click)="add()" >Submit</button>
+    
+    </form>
+</div>

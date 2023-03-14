@@ -1,0 +1,125 @@
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="title">Welcome Admin!</h1>
+        <h4 class="subtitle">Dashboard</h4>
+    </div>
+    <div class="row hero-card">
+        <div class="col-lg-3 col-md-6">
+            <div class="stu card ">
+                <div class="logo"> <fa-icon [icon]="student"> </fa-icon> </div>
+                <div class="card-text">
+                    <p class="card-no"> 50055+</p>
+                    <p class="card-name">Students</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="award card">
+                <div class="logo"> <fa-icon [icon]="award"></fa-icon></div>
+                <div class="card-text">
+                    <p class="card-no"> 50+</p>
+                    <p class="card-name">Award</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="dept card">
+                <div class="logo"> <fa-icon [icon]="school"></fa-icon></div>
+                <div class="card-text">
+                    <p class="card-no"> 10+</p>
+                    <p class="card-name">Department</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="revenue card">
+                <div class="logo"><fa-icon [icon]="revenue"></fa-icon></div>
+                <div class="card-text">
+                    <p class="card-no"> $500+</p>
+                    <p class="card-name">Revenue</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row chart">
+        <div class="col-lg-6 box">
+            <div class="column">
+                <h2>Number of Students</h2> <canvas id="ra"></canvas>
+            </div>
+        </div>
+        <div class="col-lg-6 box">
+            <div class="column"><canvas id="ra2"></canvas></div>
+        </div>
+
+        <div class="col-lg-6 box">
+            <div class="column">
+                <h2>Star Students</h2>
+
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                    <ng-container matColumnDef="id">
+                        <th mat-header-cell *matHeaderCellDef> ID </th>
+                        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                    </ng-container>
+
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef> Name </th>
+                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                    </ng-container>
+
+                    <!-- Weight Column -->
+                    <ng-container matColumnDef="marks">
+                        <th mat-header-cell *matHeaderCellDef> Marks </th>
+                        <td mat-cell *matCellDef="let element"> {{element.marks}} </td>
+                    </ng-container>
+
+                    <!-- Symbol Column -->
+                    <ng-container matColumnDef="percentage">
+                        <th mat-header-cell *matHeaderCellDef> Percentage </th>
+                        <td mat-cell *matCellDef="let element"> {{element.percentage}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="year">
+                        <th mat-header-cell *matHeaderCellDef> Year </th>
+                        <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg-6 box">
+            <div class="column">
+                <h2>Student Activity</h2>
+                <ul class="activity-feed">
+                    <li class="feed-item">
+                        <div class="feed-date">Apr 13</div>
+                        <span class="feed-text"><a>John Doe</a> won 1st place in <a>"Chess"</a></span>
+                    </li>
+                    <li class="feed-item">
+                        <div class="feed-date">Mar 21</div>
+                        <span class="feed-text"><a>Justin Lee</a> participated in <a
+                                href="invoice.html">"Carrom"</a></span>
+                    </li>
+                    <li class="feed-item">
+                        <div class="feed-date">Feb 2</div>
+                        <span class="feed-text"><a>Justin Lee</a>attended internation conference in <a
+                                href="profile.html">"St.John School"</a></span>
+                    </li>
+                    <li class="feed-item">
+                        <div class="feed-date">Apr 13</div>
+                        <span class="feed-text"><a>John Doe</a> won 1st place in <a>"Chess"</a></span>
+                    </li>
+                    <li class="feed-item">
+                        <div class="feed-date">Mar 21</div>
+                        <span class="feed-text"><a>Justin Lee</a> participated in <a
+                                href="invoice.html">"Carrom"</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

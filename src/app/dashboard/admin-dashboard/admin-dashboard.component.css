@@ -1,0 +1,111 @@
+*{margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+.stu{
+background-color: rgb(255,220,155);
+border: 1px solid orange;
+}
+.award{
+    
+    background-color: rgb(209,239,254);
+    border: 1px solid blue;
+}
+.dept{
+    
+    background-color: rgb(253,224,216);
+    border: 1px solid red;
+}
+.revenue{
+    
+    background-color: rgb(227,225,255);
+    border: 1px solid indigo;
+}
+.title{
+    font-weight: 500;
+    margin: 10px;
+}
+.subtitle{
+    font-size: 16px;
+    color: gray;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.card{
+    border-radius: 25px 0px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;align-items: center;
+    /* height: 100px; */
+    
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    background-color:rgb(252,187,57);
+    padding: 15px;
+    border-radius: 10px;
+}
+.revenue .logo{
+    background-color: rgb(110,106,251);
+}
+.award .logo{
+    background-color:rgb(25,175,251);
+
+}
+.dept .logo{
+    
+    background-color:rgb(244,105,64);
+}
+.card-no{
+    font-size: 26px;
+    font-weight: 500;
+}
+.card-name{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero-card{
+    margin-top: 10px;
+}
+
+.box{
+    
+    /* margin: 10px; */
+}
+.column{
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0, 0,0.1);
+    margin: 15px;
+    height: 400px;
+    
+}
+
+.activity-feed .feed-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #18aefa;}
+    
+.activity-feed .feed-item {
+    border-left: 2px solid #e4e8eb;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+.activity-feed {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding: 0;
+}
+
